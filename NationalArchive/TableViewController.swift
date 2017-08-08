@@ -25,36 +25,33 @@ class TableViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return data.items.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath)
         
         let currentCell = data.items[indexPath.row]
         
-        for (key, value) in data.items.enumerated() {
-            print(key)
-            print(data.items[key].title)
-            print(data.items[key].type)
-        }
+//        for (key, value) in data.items.enumerated() {
+//            print(key)
+//            print(data.items[key].title)
+//            print(data.items[key].type)
+//        }
+//
+//        print(currentCell)
         
-        
-        
-        cell.itemView.item = currentCell
-        
+        cell.textLabel?.text = currentCell.title
        
         
         return cell
