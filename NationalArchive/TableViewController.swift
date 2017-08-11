@@ -13,6 +13,14 @@ class TableViewController: UITableViewController {
     let data = DplData.sharedInstance
 
 
+    @IBOutlet weak var id: UILabel!
+    
+    
+    @IBOutlet weak var type: UILabel!
+    
+    @IBOutlet weak var test: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,6 +60,8 @@ class TableViewController: UITableViewController {
 //        print(currentCell)
         
         cell.textLabel?.text = currentCell.title
+        cell.detailTextLabel?.text = currentCell.type
+        
        
         
         return cell
