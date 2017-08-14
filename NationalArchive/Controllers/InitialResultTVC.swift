@@ -8,10 +8,13 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class InitialResultTVC: UITableViewController {
     
     let data = DplData.sharedInstance
 
+    var searchField1: String?
+    
+    
 
     @IBOutlet weak var id: UILabel!
     
@@ -21,14 +24,24 @@ class TableViewController: UITableViewController {
     @IBOutlet weak var test: UILabel!
     
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        data.getItemsFromAPI {
+            
+            
+            
+            
+            
+        }
+    
+        print(searchField1)
+    
+    
+    
     }
 
     override func didReceiveMemoryWarning() {

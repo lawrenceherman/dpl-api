@@ -15,6 +15,8 @@ class DplData {
     
     var items: [DplItem] = []
     
+    
+    
     func getItemsFromAPI(_ completion: @escaping () -> ()) {
         
         print("test2")

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE46D3571ECBAB63005A9BFA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE46D3561ECBAB63005A9BFA /* TableViewController.swift */; };
+		FE46D3571ECBAB63005A9BFA /* InitialResultTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE46D3561ECBAB63005A9BFA /* InitialResultTVC.swift */; };
+		FE8F6DE61F42383800905020 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F6DE51F42383800905020 /* InitialView.swift */; };
+		FE8F6DEB1F42398E00905020 /* InitialResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F6DEA1F42398E00905020 /* InitialResultView.swift */; };
 		FEDFE7271EB781DC009B803B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFE7261EB781DC009B803B /* AppDelegate.swift */; };
-		FEDFE7291EB781DC009B803B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFE7281EB781DC009B803B /* ViewController.swift */; };
+		FEDFE7291EB781DC009B803B /* InitialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDFE7281EB781DC009B803B /* InitialVC.swift */; };
 		FEDFE72C1EB781DC009B803B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDFE72A1EB781DC009B803B /* Main.storyboard */; };
 		FEDFE72E1EB781DC009B803B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEDFE72D1EB781DC009B803B /* Assets.xcassets */; };
 		FEDFE7311EB781DC009B803B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEDFE72F1EB781DC009B803B /* LaunchScreen.storyboard */; };
@@ -20,10 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE46D3561ECBAB63005A9BFA /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FE46D3561ECBAB63005A9BFA /* InitialResultTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialResultTVC.swift; sourceTree = "<group>"; };
+		FE8F6DE51F42383800905020 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		FE8F6DEA1F42398E00905020 /* InitialResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialResultView.swift; sourceTree = "<group>"; };
 		FEDFE7231EB781DC009B803B /* NationalArchive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NationalArchive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEDFE7261EB781DC009B803B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEDFE7281EB781DC009B803B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEDFE7281EB781DC009B803B /* InitialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVC.swift; sourceTree = "<group>"; };
 		FEDFE72B1EB781DC009B803B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEDFE72D1EB781DC009B803B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEDFE7301EB781DC009B803B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +49,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE8F6DE71F42387300905020 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE8F6DE51F42383800905020 /* InitialView.swift */,
+				FE8F6DEA1F42398E00905020 /* InitialResultView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FE8F6DE81F42389000905020 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FEDFE7281EB781DC009B803B /* InitialVC.swift */,
+				FE46D3561ECBAB63005A9BFA /* InitialResultTVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FE8F6DE91F4238AB00905020 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEDFE73A1EB788CD009B803B /* Dpltem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FEDFE71A1EB781DC009B803B = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +94,17 @@
 		FEDFE7251EB781DC009B803B /* NationalArchive */ = {
 			isa = PBXGroup;
 			children = (
+				FE8F6DE91F4238AB00905020 /* Model */,
+				FE8F6DE81F42389000905020 /* Controllers */,
+				FE8F6DE71F42387300905020 /* Views */,
 				FEDFE7261EB781DC009B803B /* AppDelegate.swift */,
 				FEDFE7381EB782F1009B803B /* Secrets.swift */,
-				FEDFE73A1EB788CD009B803B /* Dpltem.swift */,
-				FEDFE7281EB781DC009B803B /* ViewController.swift */,
 				FEDFE72A1EB781DC009B803B /* Main.storyboard */,
 				FEDFE72D1EB781DC009B803B /* Assets.xcassets */,
 				FEDFE72F1EB781DC009B803B /* LaunchScreen.storyboard */,
 				FEDFE7321EB781DC009B803B /* Info.plist */,
 				FEDFE73C1EB78941009B803B /* DplAPIClient.swift */,
 				FEDFE73E1EB7898E009B803B /* DplData.swift */,
-				FE46D3561ECBAB63005A9BFA /* TableViewController.swift */,
 			);
 			path = NationalArchive;
 			sourceTree = "<group>";
@@ -154,10 +184,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEDFE73F1EB7898E009B803B /* DplData.swift in Sources */,
-				FEDFE7291EB781DC009B803B /* ViewController.swift in Sources */,
+				FE8F6DE61F42383800905020 /* InitialView.swift in Sources */,
+				FEDFE7291EB781DC009B803B /* InitialVC.swift in Sources */,
+				FE8F6DEB1F42398E00905020 /* InitialResultView.swift in Sources */,
 				FEDFE73D1EB78941009B803B /* DplAPIClient.swift in Sources */,
 				FEDFE7391EB782F1009B803B /* Secrets.swift in Sources */,
-				FE46D3571ECBAB63005A9BFA /* TableViewController.swift in Sources */,
+				FE46D3571ECBAB63005A9BFA /* InitialResultTVC.swift in Sources */,
 				FEDFE7271EB781DC009B803B /* AppDelegate.swift in Sources */,
 				FEDFE73B1EB788CD009B803B /* Dpltem.swift in Sources */,
 			);

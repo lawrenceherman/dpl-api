@@ -11,11 +11,15 @@ import Foundation
 
 class DplAPIClient {
     
+    
     class func getItems(with completion: @escaping ([String: Any]) -> ()) {
         
         print("inside dpiclient get items")
        
         let urlString = "\(Secrets.url)/items?q=bridge&api_key=\(Secrets.key)"
+        
+        
+        
         
         print("urlString\(urlString)")
         
